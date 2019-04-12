@@ -1,0 +1,15 @@
+body {
+  background-color: #F8F8F8
+}
+
+.crystal-containers {
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  /* background-color: #F8F8F8 */
+}
+
+.gem {
+  width: 200px;
+  height: 200px;
+}
