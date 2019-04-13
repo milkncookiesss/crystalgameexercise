@@ -13,7 +13,7 @@ var checkWins = function() {
     //increment score
     winScore++;
     //update score
-    $(".wins").html(winScore);
+    $(".win-score").text(winScore);
     //reset game
     reset();
 
@@ -21,7 +21,7 @@ var checkWins = function() {
     //increment loss
     lossScore++;
     //update losses
-    $(".losses").html(lossScore);
+    $(".loss-score").text(lossScore);
     //reset game
     reset();
   }
@@ -52,10 +52,10 @@ var setCrystals = function() {
 var reset = function() {
   playerGuess = 0;
   compNum = Math.floor(Math.random() * (120 - 19)) + 19;
-  $('.wins').html(winScore);
-  $('.losses').html(lossScore);
-  $(".computer-num").html(compNum);
-  $(".player-score").html(playerGuess);
+  $('.win-score').text(winScore);
+  $('.loss-score').text(lossScore);
+  $(".comp-num").text(compNum);
+  $(".player-num").text(playerGuess);
 }
 
 $(document).ready(function() {
@@ -66,7 +66,7 @@ $(document).ready(function() {
   $(document).on("click", ".gem", function() {
     var gemValue = parseInt($(this).attr("value"));
     playerGuess += gemValue;
-    $(".player-score").html(playerGuess);
+    $(".player-num").text(playerGuess);
     checkWins();
   })
 })
