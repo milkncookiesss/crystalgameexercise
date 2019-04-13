@@ -14,6 +14,7 @@ var checkWins = function() {
     winScore++;
     //update score
     $(".win-score").text(winScore);
+    alert("Hey you got the Crystal Gems!");
     //reset game
     reset();
 
@@ -22,6 +23,7 @@ var checkWins = function() {
     lossScore++;
     //update losses
     $(".loss-score").text(lossScore);
+    alert("Steven got grounded...");
     //reset game
     reset();
   }
